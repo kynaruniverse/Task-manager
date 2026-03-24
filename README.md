@@ -1,33 +1,27 @@
-# ⚡ Omni Task Manager
+# ⚡ Evolved Task Manager
 
-Minimal, fast, persistent task manager. Zero dependencies, runs anywhere.
+Feature-rich task manager with priorities, due dates, filtering, and sorting. Zero dependencies, runs anywhere.
 
 ## 🚀 Setup (Spck Editor)
-1. Create a new folder named `task-manager`.
-2. Copy the files into the folder.
+1. Create a folder `task-manager`.
+2. Copy the four files into it.
 3. Open `index.html` – it just works.
 
-## 🔗 GitHub Push & Pages
-1. Create a new GitHub repository (no README, no .gitignore).
-2. Upload all files (or push via terminal).
-3. Go to **Settings > Pages** → Source: `GitHub Actions`.
-4. The included workflow will automatically deploy on every push.
+## 🔗 GitHub Pages
+- Push to GitHub repository with the included GitHub Actions workflow.
+- Automatically deploys to Pages.
 
-## 📁 File Structure
-task-manager/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── .github/workflows/deploy.yml
+## ✨ Features
+- Add tasks with priority (low/medium/high) and optional due date.
+- Mark tasks complete / delete.
+- Filter by status (all/active/completed) and priority.
+- Toggle sort by due date.
+- Persists all data in localStorage.
+- Fully responsive, glassmorphic design.
 
-
-## 💡 Features
-- Add / delete tasks
-- Mark tasks complete (click text)
-- Persists tasks in localStorage
-- Responsive, glassmorphic UI
-- Zero external dependencies
-
-## ⚙️ GitHub Actions Workflow
-The `.github/workflows/deploy.yml` file deploys to GitHub Pages automatically using `actions/upload-pages-artifact` and `actions/deploy-pages`.
+## 📁 Files
+- `index.html` – structure
+- `style.css` – styling
+- `script.js` – logic
+- `README.md` – this file
+- `.github/workflows/deploy.yml` – GitHub Pages deployment

@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡ Omni Task Manager</title>
+    <title>⚡ Evolved Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>⚡ Omni Task Manager</h1>
-        <div class="input-group">
-            <input type="text" id="taskInput" placeholder="What needs to be shipped?">
-            <button id="addBtn">+ Add Task</button>
+        <h1>⚡ Evolved Task Manager</h1>
+
+        <!-- Add task form -->
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Task title...">
+            <select id="prioritySelect">
+                <option value="low">🔵 Low</option>
+                <option value="medium" selected>🟡 Medium</option>
+                <option value="high">🔴 High</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <button id="addBtn">+ Add</button>
         </div>
+
+        <!-- Filter & sort controls -->
+        <div class="controls">
+            <select id="filterStatus">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+            <select id="filterPriority">
+                <option value="all">All Priorities</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="sortDueBtn">Sort by Due Date</button>
+            <button id="clearAllBtn">Clear All</button>
+        </div>
+
+        <!-- Task list -->
         <ul id="taskList"></ul>
+
         <div class="footer">
-            <button id="clearBtn">Clear All</button>
             <span id="taskCount"></span>
         </div>
     </div>
